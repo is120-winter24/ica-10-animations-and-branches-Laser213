@@ -1,1 +1,54 @@
 /* TEAMMATE TWO EDITS THESE STYLES FOR YOUR TASKS */
+* {box-sizing: border-box;}
+
+.center-grid .box-3 {
+    background-image: linear-gradient(to right,#000, #00f);
+}
+
+.box-3:hover {
+    animation: colorwheel 4s linear infinite normal;
+}
+
+@keyframes colorwheel {
+    0% {filter: hue-rotate(0deg);}
+    100% {filter: hue-rotate(360deg);}
+}
+
+.notification {
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    bottom: 0;
+    left: -30%;
+    padding: 3%;
+    animation: scroll-in 10s ease infinite;
+    background-color: lavender;
+}
+
+@keyframes scroll-in {
+    25% {left: 0%;}
+    75% {left: 0%;}
+}
+
+.box-4 {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    font-family: inter;
+    font-size: 20px;
+}
+
+.special-text {
+    text-decoration: none;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #0bf, #f00);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size ease-out 1s;
+}
+
+.special-text:hover {
+    background-size: 100% 2px;
+    transition: background-size ease-out 1s;
+}
