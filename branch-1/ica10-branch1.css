@@ -1,1 +1,58 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
+
+.logo img {
+    width: 40%;
+    transition: all .3s ease-out;
+}
+
+.logo img:hover {
+    width: 50%;
+    transform: rotate(15deg);
+    transition: all 1s ease-in-out;
+}
+
+.box-1 svg {
+    animation-name: rotate-360;
+    animation-timing-function: linear;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes rotate-360 {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.box-2 {
+    border-radius: 50%;
+    animation-name: box-move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes box-move {
+    0% {grid-column: 2/3;
+        grid-row: 1/2;}
+
+    20% {grid-column: 3/4;
+        grid-row: 1/2;}
+
+    40% {grid-column: 1/2;
+        grid-row: 2/3;}
+
+    60% {grid-column: 2/3;
+        grid-row: 2/3;}
+
+    80% {grid-column: 3/4;
+        grid-row: 2/3;}
+
+    100% {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
